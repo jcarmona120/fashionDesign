@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/feedposts",
+      "handler": "Feedpost.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/feedposts/count",
+      "handler": "Feedpost.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/feedposts/:id",
+      "handler": "Feedpost.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/feedposts",
+      "handler": "Feedpost.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/feedposts/:id",
+      "handler": "Feedpost.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/feedposts/:id",
+      "handler": "Feedpost.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

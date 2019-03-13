@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/heroposts",
+      "handler": "Heropost.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/heroposts/count",
+      "handler": "Heropost.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/heroposts/:id",
+      "handler": "Heropost.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/heroposts",
+      "handler": "Heropost.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/heroposts/:id",
+      "handler": "Heropost.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/heroposts/:id",
+      "handler": "Heropost.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
